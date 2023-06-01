@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good Food</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tech Blog</title>
+
 </head>
 
 <body>
     <nav>
         <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        {{#if isLoggedIn}}
+        <a href="/" id="logout">Logout</a>
+        {{else}}
         <a href="/login">Login</a>
         <a href="/signup">Signup</a>
-        <a href="/dashboard">Dashboard</a>
+        {{/if}}
     </nav>
 
     <main>
@@ -25,6 +31,11 @@
             All rights reserved 2023
         </p>
     </footer>
+
+
+    {{#if isLoggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>

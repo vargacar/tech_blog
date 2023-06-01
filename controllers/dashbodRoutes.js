@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { User } = require('../models');
+const auth = require('../utils/auth');
 
-
-router.get('/dashboard', (req, res) => {
+router.get('/dashboard', auth, (req, res) => {
     const userId = req.session.userId
     User.findOne({
         where: { id: userId },
