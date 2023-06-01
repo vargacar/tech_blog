@@ -1,1 +1,9 @@
-<h1>Home Page</h1>
+<div class="home_page">
+    {{#each posts }}
+    <div class="post_container">
+        <h3>{{this.title}}</h3>
+        <h5>Posted By {{this.user.username}}</h5>
+        <p>{{this.content}}</p>
+    </div>
+    {{/each}}
+</div>
