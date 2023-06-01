@@ -34,5 +34,6 @@ Visual Studio Code: Website
 
 
 Deployed Application Link:
-
+https://vargacar.github.io/tech_blog/
 GitHub Repository:
+https://github.com/vargacar/tech_blog
