@@ -11,7 +11,7 @@ This challenge requires the creation of a tech blog back-end site that meets spe
 
 Usage Instructions
 
-Repository: Open documentation run 'npm i' and update '.env'.
+Repository: Open documentation run 'npm i' and update '.env'.   (npm run dev on terminal)
 Run 'npm run seed' to seed the database with test data. Then, run 'npm start' or 'nodemon' to start the server and sync the Sequelize models to the MySQL database.
 go to the web browser Port 3001, and be able to interact by loging in, writting, loging out.
 
