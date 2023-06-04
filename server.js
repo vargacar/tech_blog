@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers')
 const session = require('express-session');
 const path = require('path');
-
+const PORT = process.env.PORT || 3001
 const hbs = exphbs.create({ helpers });
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
@@ -36,7 +36,7 @@ const sess = {
 app.use(session(sess));
 
 
-const PORT = process.env.PORT || 3001
+
 
 app.use(routes)
 sequelize.sync({ force: false }).then(() => {

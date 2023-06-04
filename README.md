@@ -37,3 +37,5 @@ Deployed Application Link:
 https://vargacar.github.io/tech_blog/
 GitHub Repository:
 https://github.com/vargacar/tech_blog
+Heroku
+https://tech-blog2023.herokuapp.com/login
